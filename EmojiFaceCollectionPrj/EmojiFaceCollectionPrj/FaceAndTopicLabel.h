@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface FaceAndTopicLabel : UILabel
+@property (nonatomic,copy) NSArray * topicArr;
+@property (nonatomic,copy) void(^tapedOnTopicBlcok)(id data);
+@property (nonatomic,copy) UIImage * (^faceImageForFaceNameBlock)(NSString *name);
+
+
+
+
+
 
 @end
